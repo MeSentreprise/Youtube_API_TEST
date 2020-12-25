@@ -1,9 +1,10 @@
-import speech_recognition as micro
+
 import datetime
 from Google import Create_Service
 from googleapiclient.http import *
 from tkinter import *
 from tkinter import filedialog 
+#Alos this file is here just to simplify my code.
 
 def Upload_Video(Title,Description,selfDeclaredMadeForKids):
     SCOPES=["https://www.googleapis.com/auth/youtube.upload"]
