@@ -2,7 +2,6 @@ import speech_recognition as micro
 import datetime
 from Google import Create_Service
 from googleapiclient.http import *
-import cv2
 from tkinter import *
 from tkinter import filedialog 
 
@@ -29,6 +28,7 @@ def Upload_Video(Title,Description,selfDeclaredMadeForKids):
         media_body=mediafile
     ).execute()
 
-Upload_Video('Test',"Good Video",True)
+if __name__ == "__main__":
+    pass
 
 
