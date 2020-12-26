@@ -1,6 +1,6 @@
 
 import datetime
-from Google import Create_Service
+from libs.Google import Create_Service
 from googleapiclient.http import *
 from tkinter import *
 from tkinter import filedialog 
@@ -10,7 +10,7 @@ def Upload_Video(Title,Description,selfDeclaredMadeForKids):
     SCOPES=["https://www.googleapis.com/auth/youtube.upload"]
     API_NAME = 'youtube'
     API_VERSION = 'v3'
-    youtube=Create_Service("client_secret.json",API_NAME,API_VERSION,SCOPES)
+    youtube=Create_Service("secret_file.json",API_NAME,API_VERSION,SCOPES)
     video_properties={
         'snippet':{
             'title':Title,
